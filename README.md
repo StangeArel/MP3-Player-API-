@@ -13,3 +13,7 @@ This project is a basic and interactive MP3 player built with **HTML, CSS, and J
 🎧 Display of the currently playing instrument (optionally with image)
 
 ##The focus is on the practical use of modern JavaScript techniques to manage audio playback and playlist interaction directly in the browser.##
+
+## 🖼️ Preview
+Here’s what the drum kit looks like in action:
+![MP3 Player](MP3-Player.png)
