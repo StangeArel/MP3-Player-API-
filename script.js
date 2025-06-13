@@ -1,3 +1,5 @@
+"use strict"
+
 const playlistSongs = document.getElementById("playlist-songs");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
@@ -85,6 +87,74 @@ let userData = {
     songCurrentTime: 0,
 };
 
+const renderSongs = array => {
+
+}
+
+
+// Anonyme Funktion
+setTimeout(function () {
+    console.log("Hi!");
+}, 1000);
+
+// Anonyme Funktion
+// mit Arrow Function
+setTimeout(() => {
+    console.log("Hi!");
+}, 1000);
+
+// Pfeilfunktion (Arrow Function)
 const printGreeting = () => {
     console.log("Hello there!");
+}
+printGreeting();
+
+//--> Pfeilfunktion mit Parametr
+const printMessage = org => {
+    console.log(`${org} is awesome!`);
+}
+printMessage("freeCodeCamp");
+
+// Nur ein Parameter → Klammern optional
+const printMessage = org => {
+    console.log(`${org} is awesome!`);
+}
+
+// Mit Klammern (auch bei einem Parameter möglich)
+const printMessage = (org) => {
+    console.log(`${org} is awesome!`);
+}
+
+// Kein Parameter → Klammern notwendig
+const sayHi = () => {
+    console.log("Hi!");
+}
+
+// Mehrere Parameter → Klammern notwendig
+const add = (a, b) => {
+    return a + b;
+}
+
+// 
+const addTwoNumbers = (num1, num2) => {
+    return num1 + num2;
+}
+// das ist das gleiche: 
+// const addTwoNumbers = (num1, num2) => num1 + num2
+console.log(addTwoNumbers(3, 4)); //--> 7
+
+//----------------------------------------------- 
+// Normale benannte Funktion
+function printMessage(org) {
+    console.log(`${org} is awesome!`);
+}
+
+// Anonyme Funktion (z. B. als Callback)
+setTimeout(function () {
+    console.log("Hi!");
+}, 1000);
+
+// Arrow Function
+const printMessage = (org) => {
+    console.log(`${org} is awesome!`);
 }
